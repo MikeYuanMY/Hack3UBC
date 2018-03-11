@@ -21,9 +21,9 @@ google.charts.load('current', {
 //        ['South West Region',48,2154],
 //        ['Wales Region',49,1876],
 //        ['West Midlands Region', 48,2154],
-//        ['Yorkshire Region', 46,1792]  
-//        
-//      
+//        ['Yorkshire Region', 46,1792]
+//
+//
 //      ]);
 //
 //      var options = {
@@ -45,7 +45,7 @@ google.charts.load('current', {
 //      // this new DataTable object holds all the data
 //      var data = new google.visualization.arrayToDataTable(arrayData);
 //      // CAPACITY - En-route ATFM delay - YY - CHART
-//       
+//
 //        var options = {
 //        region: 'GB',
 //        displayMode: 'markers',
@@ -73,7 +73,9 @@ google.charts.load('current', {
           var options = {
         region: 'GB',
         displayMode: 'markers',
-        colorAxis: {colors: ['green', 'blue']}
+        colorAxis: {colors: ['green', 'blue']},
+        datalessRegionColor: '#f8bbd0',
+          defaultColor: '#f5f5f5'
       };
 
       var data = response.getDataTable();
